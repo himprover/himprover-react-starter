@@ -1,20 +1,20 @@
 {
 	"extends": "./node_modules/gts/tsconfig-google.json",
 	"compilerOptions": {
-		"target": "es6",
-		"lib": ["dom", "dom.iterable", "esnext"],
+		"jsx": "react-jsx",
+		"target": "ES2015",
+		"module": "ESNext",
+		"lib": ["dom", "dom.iterable", "ESNext"],
+		"outDir": "dist",
 		"allowJs": true,
-		"skipLibCheck": true,
-		"forceConsistentCasingInFileNames": true,
-		"noEmit": true,
-		"esModuleInterop": true,
-		"module": "esnext",
-		"moduleResolution": "node",
-		"resolveJsonModule": true,
+		"sourceMap": true,
 		"isolatedModules": true,
-		"jsx": "preserve",
-		"incremental": true,
-		"baseUrl": "./src",
+		"moduleResolution": "node",
+		"baseUrl": ".",
+
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
 
 		/* Type Checking */
 		"noFallthroughCasesInSwitch": true,
@@ -23,6 +23,13 @@
 		"noUnusedParameters": true,
 		"strict": true
 	},
-	"include": ["**/*.ts", "**/*.tsx"],
-	"exclude": ["node_modules"]
+	"include": [
+		"src/**/*",
+		"babel.config.js",
+		"webpack.config.js",
+		"webpack.dev.js",
+		"webpack.prod.js",
+		"prettierrc.js"
+	],
+	"exclude": ["node_modules", "dist/**/*"]
 }
