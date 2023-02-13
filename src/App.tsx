@@ -1,12 +1,5 @@
-import {useState} from 'react';
+import {Home} from './pages/Home';
 
 export const App = () => {
-  const [num, setNum] = useState(0);
-  return (
-    <>
-      <p>himprover's react boilerplate</p>
-      <p>{num}</p>
-      <button onClick={() => setNum(prev => prev + 1)}>test button</button>
-    </>
-  );
+  return <Home />;
 };

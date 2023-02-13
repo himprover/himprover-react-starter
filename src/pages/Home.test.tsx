@@ -1,5 +1,5 @@
 import {fireEvent, render} from '@testing-library/react';
-import {App} from './App';
+import {Home} from './Home';
 
 describe('js test', () => {
   it('normal test', () => {
@@ -7,7 +7,7 @@ describe('js test', () => {
   });
 
   it('dom test', () => {
-    const app = render(<App />);
+    const app = render(<Home />);
     const num = app.getByText('0');
     const button = app.getByText('test button');
 
