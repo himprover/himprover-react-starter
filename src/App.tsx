@@ -1,5 +1,5 @@
-export const App = () => (
-  <>
-    <p>himprover's react boilerplate {process.env.API}</p>
-  </>
-);
+import {Home} from './pages/Home';
+
+export const App = () => {
+  return <Home />;
+};
