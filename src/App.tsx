@@ -1,5 +1,5 @@
-import {Home} from './pages/Home';
+import {Routes} from './pages/Routes';
 
 export const App = () => {
-  return <Home />;
+  return <Routes />;
 };
