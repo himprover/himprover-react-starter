@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-export const Home = () => {
+export const HomePage = () => {
   const [num, setNum] = useState(0);
   return (
     <>
